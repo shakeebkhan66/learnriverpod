@@ -4,3 +4,10 @@ You may use this to access a repository, a logger, or some other class that does
 
 2. StateProvider
 StateProvider is great for storing simple state objects that can change, such as a counter value.
+StateProvider is ideal for storing simple state variables, such as enums, strings, booleans, and
+numbers. Notifier can also be used for the same purpose and is more flexible. For more complex or
+asynchronous state, use AsyncNotifierProvider, FutureProvider, or StreamProvider as described below.
+
+3. StateNotifierProvider
+StateNotifierProvider and StateNotifier are ideal for managing state that may change in reaction
+to an event or user interaction.

@@ -1,16 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:learnriverpod/first_screen.dart';
-import 'package:learnriverpod/home_screen.dart';
-import 'package:learnriverpod/second_screen.dart';
+import 'eightdifferentproviders/state_notifier_providder_screen.dart';
 
-import 'eightdifferentproviders/simple_provider_screen.dart';
-import 'eightdifferentproviders/state_provider_screen.dart';
 
 // TODO helloWorldProvider is a Global Variable to know the state of provider
 // TODO Provider<String> is telling about what type of state provider have
 // TODO ref is a parameter which will help to know the state of others providers
 // TODO to widgets
+
+
 final helloWorldProvider = Provider<String>((ref) {
   return "Shakeeb Ahmed Khan";
 });
@@ -33,7 +31,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: const StateProviderScreen(),
+      home: const StateNotifierProviderScreen(),
     );
   }
 }
