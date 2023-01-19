@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:learnriverpod/first_screen.dart';
 import 'package:learnriverpod/home_screen.dart';
 
 // TODO helloWorldProvider is a Global Variable to know the state of provider
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: const HomeScreen(),
+      home: const FirstScreen(),
     );
   }
 }
