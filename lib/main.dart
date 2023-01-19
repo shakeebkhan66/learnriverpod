@@ -4,6 +4,9 @@ import 'package:learnriverpod/first_screen.dart';
 import 'package:learnriverpod/home_screen.dart';
 import 'package:learnriverpod/second_screen.dart';
 
+import 'eightdifferentproviders/simple_provider_screen.dart';
+import 'eightdifferentproviders/state_provider_screen.dart';
+
 // TODO helloWorldProvider is a Global Variable to know the state of provider
 // TODO Provider<String> is telling about what type of state provider have
 // TODO ref is a parameter which will help to know the state of others providers
@@ -11,6 +14,8 @@ import 'package:learnriverpod/second_screen.dart';
 final helloWorldProvider = Provider<String>((ref) {
   return "Shakeeb Ahmed Khan";
 });
+
+
 
 void main() {
   // wrap the entire app with a ProviderScope so that widgets
@@ -28,7 +33,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: const SecondScreen(),
+      home: const StateProviderScreen(),
     );
   }
 }

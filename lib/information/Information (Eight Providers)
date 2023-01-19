@@ -1,0 +1,6 @@
+1. Provider
+Provider is great for accessing dependencies and objects that don’t change.
+You may use this to access a repository, a logger, or some other class that doesn't contain mutable state.
+
+2. StateProvider
+StateProvider is great for storing simple state objects that can change, such as a counter value.
