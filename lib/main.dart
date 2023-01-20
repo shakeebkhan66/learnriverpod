@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'eightdifferentproviders/future_notifier_provider_screen.dart';
 import 'eightdifferentproviders/state_notifier_providder_screen.dart';
 
 
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.indigo,
       ),
-      home: const StateNotifierProviderScreen(),
+      home: const FutureNotifierProviderScreen(),
     );
   }
 }

@@ -11,3 +11,8 @@ asynchronous state, use AsyncNotifierProvider, FutureProvider, or StreamProvider
 3. StateNotifierProvider
 StateNotifierProvider and StateNotifier are ideal for managing state that may change in reaction
 to an event or user interaction.
+
+4. FutureProvider
+Note that using StateNotifierProvider is overkill if you only need to read some async data.
+That's what FutureProvider is for. 👇
+Want to get the result from an API call that returns a Future?.

@@ -2,6 +2,9 @@ import 'dart:async';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class Clock extends StateNotifier<DateTime> {
+
+  late final Timer _timer;
+
   // 1. initialize with current time
   Clock() : super(DateTime.now()) {
     // 2. create a timer that fires every second
@@ -10,8 +13,6 @@ class Clock extends StateNotifier<DateTime> {
       state = DateTime.now();
     });
   }
-
-  late final Timer _timer;
 
   // 4. cancel the timer when finished
   @override
